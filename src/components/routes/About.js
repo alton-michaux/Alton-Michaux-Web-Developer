@@ -20,16 +20,13 @@ const About = ({ page, setPage }) => {
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p>
-            I am an experienced back-end developer with expertise in Object-Oriented Programming (OOP), focusing on Ruby on Rails technologies.
+            I'm a back-end developer with a focus on Ruby on Rails, currently working on the Vamos app at Code The Dream Labs — a field operations platform serving social impact organizations.
           </p>
           <p>
-            My knowledge includes MVC concepts, ORM, and RESTful APIs.
+            Day-to-day I own the release cycle from branching through production deployment, design and maintain RESTful APIs, write RSpec and Capybara test suites, and have recently been integrating Google Gemini to power AI features within the app. I also contribute on the frontend using React and JavaScript.
           </p>
           <p>
-            Additionally, I have practical experience in front-end development using HTML, CSS, and JavaScript.
-          </p>
-          <p>
-            As a self-motivated individual constantly eager to expand my skill set and enhance my existing strengths, I take great pride in delivering efficient business solutions to my clients and employers.
+            Outside of shipping code, I review PRs, mentor junior developers, and help keep our deployment infrastructure running across Heroku and DigitalOcean.
           </p>
         </div>
         <LanguageContainer></LanguageContainer>

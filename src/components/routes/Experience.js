@@ -13,35 +13,32 @@ const Experience = ({ page, setPage }) => {
   const listItems =
     [
       {
-        text: "Optimize/Maintain API infrastructure",
+        text: "Develop new features across the full stack",
         key: 1
       }, {
-        text: "Develop new features",
+        text: "Optimize and maintain API infrastructure",
         key: 2
       }, {
-        text: "Write tests using RSPEC and Capybara",
+        text: "Write and maintain tests using RSpec and Capybara",
         key: 3
       }, {
-        text: "Write documentation",
+        text: "Manage the full release lifecycle — branching, release notes, staging and production deployments, and hotfixes",
         key: 4
       }, {
-        text: "Work with the team to implement/debug features",
+        text: "Triage and resolve production incidents including Elasticsearch outages and database migration failures",
         key: 5
       }, {
-        text: "Actively contribute to QA process",
+        text: "Perform code reviews and uphold code quality standards",
         key: 6
       }, {
-        text: "Perform code reviews",
+        text: "Mentor junior developers and lead apprentice evaluations",
         key: 7
       }, {
-        text: "Perform developer evaluations",
+        text: "Integrate LLM APIs (Google Gemini) to build AI-powered features",
         key: 8
       }, {
-        text: "Mentor junior developers",
+        text: "Document APIs using Swagger and manage deployment infrastructure across Heroku and DigitalOcean",
         key: 9
-      }, {
-        text: "Collaborate with management to meet deadlines",
-        key: 10
       }
     ]
   return (

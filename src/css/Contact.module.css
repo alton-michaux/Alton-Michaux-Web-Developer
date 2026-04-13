@@ -1,15 +1,21 @@
 .contactItems {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
 }
 
-.contactItems a {
+.contactItem a {
   text-decoration: none;
-  color: white;
-  line-height: 2em;
+  color: var(--text-muted);
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 2.2em;
+  transition: color 0.15s ease;
+  display: block;
 }
 
-@media screen and (min-width: 920px) {
-  .contactItems a:hover {
-    color: magenta;
-  }
+.contactItem a:hover {
+  color: var(--accent);
 }

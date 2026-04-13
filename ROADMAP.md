@@ -1,3 +1,3 @@
 - [x] Get the app back running
 - [x] Remove dead links
-- [ ] Redesign UI
+- [x] Redesign UI

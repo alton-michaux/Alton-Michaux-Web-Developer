@@ -1,19 +1,15 @@
 .footer {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   height: 40px;
-  padding: 2px;
-  background-color: rgb(13, 48, 122, 0.9);
-  text-align: center;
-  color: white;
-  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8em;
+  font-family: 'Space Grotesk', sans-serif;
   z-index: 1000;
-  box-shadow: rgb(39, 54, 87) -1px 2px 13px;
-}
-
-@media screen and (min-width: 920px) {
-  .footer {
-    height: 30px;
-  }
 }

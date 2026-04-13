@@ -1,58 +1,63 @@
 .navBar {
-  z-index: 1;
+  position: sticky;
   top: 0;
-  min-width: 100vw;
-  position: fixed;
-  height: 60px;
-  background-color: rgb(13, 48, 122);
-  box-shadow: rgb(39, 54, 87) -1px 2px 13px;
+  z-index: 1000;
+  width: 100%;
+  height: 56px;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.brand {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .navList {
   display: flex;
   flex-direction: row;
-  position: relative;
-  text-decoration: none;
   list-style: none;
-  width: 100%;
-  align-content: space-between;
-  justify-content: space-between;
-  padding: 2.5%;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .listItems {
-  font-size: 1em;
-  overflow: hidden;
-  margin-top: 2.5%;
+  font-size: 0.9em;
+  font-weight: 500;
 }
-  
+
 .listItems > a {
   text-decoration: none;
-  color: white;
+  color: var(--text-muted);
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+  display: block;
+}
+
+.listItems > a:hover {
+  color: var(--accent);
 }
 
 @media screen and (min-width: 920px) {
   .navBar {
-    position: sticky;
-    z-index: 1000;
-    width: 800px;
-    height: 50px;
+    padding: 0 40px;
   }
 
   .navList {
-    display: flex;
-    list-style: none;
-    padding: 0;
+    gap: 8px;
   }
 
   .listItems {
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 1.25em;
-  }
-  
-  .listItems:hover,
-  .project-pulldown {
-    cursor: pointer;
+    font-size: 0.95em;
   }
 }

@@ -55,7 +55,7 @@ const Experience = ({ page, setPage }) => {
             Professional Experience
           </h1>
           <p className={globalStyles.greet}>Code The Dream Labs (<i>October 2021 - present</i>)</p>
-          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/view/vamosprojectwiki/home" target="none">Vamos app</a></p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/codethedream.org/vamos-project-wiki/" target="none">Vamos app</a></p>
           <ul className={[styles.taskList, globalStyles.greet].join(' ')}> A short list of my duties and contributions to Vamos include:
             {listItems.map((item) => {
               return (

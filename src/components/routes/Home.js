@@ -18,9 +18,9 @@ const Home = ({ page, setPage }) => {
       ></Nav>
       <div className={globalStyles.mainPageGreetBox}>
         <div className={styles.greetWrapper}>
-          <h1 className={globalStyles.greet}>Hey, I'm Alton and I Develop Web Apps.</h1>
-          <h2 className={[globalStyles.greet, globalStyles.mobileHide].join(' ')}>Let's Build Something.</h2>
-          <p className={[globalStyles.greet, globalStyles.mobileHide].join(' ')}>Feel free to browse my personal work below.</p>
+          <h1 className={styles.heroTitle}>Hey, I'm Alton and I build <span className={styles.accent}>web apps.</span></h1>
+          <h2 className={[styles.heroSubtitle, globalStyles.mobileHide].join(' ')}>Let's Build Something.</h2>
+          <p className={[styles.heroBody, globalStyles.mobileHide].join(' ')}>Feel free to browse my personal work below.</p>
         </div>
       </div>
       <Dropdown></Dropdown>

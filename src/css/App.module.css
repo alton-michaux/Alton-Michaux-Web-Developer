@@ -4,94 +4,70 @@
   padding: 0;
 }
 
-option:first {
-  color: grey;
-}
-
 ul {
   list-style-type: none;
 }
 
 .parentDiv {
-  overflow-y: scroll;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: var(--bg);
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--text-primary);
+}
+
+.mainPageGreetBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/Images/alton-members-only.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #050525;
-  background-blend-mode: screen;
-  background-size: cover;
-  font-family: "Lato", sans-serif;
+  align-items: center;
+  padding: 60px 24px 80px;
+  text-align: center;
 }
 
 .greet {
-  text-align: center;
-  top: 35%;
-  font-size: 1em;
-  margin: 5px;
-  color: white;
-} 
+  color: var(--text-primary);
+  margin: 8px 0;
+}
 
 .thumbnail {
   background-color: transparent;
   object-fit: contain;
   display: block;
-  top: 0;
-  left: 0;
   height: 65%;
   width: 80%;
   padding: 2%;
 }
 
+.mainPage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .text {
-  position: relative;
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
+}
+
+.text a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
 }
 
 .mobileHide {
   display: none;
 }
 
-#jsDiv,
-#rubyDiv {
-  display: none;
-}
-
 @media screen and (min-width: 920px) {
-  .parentDiv {
-    overflow: hidden;
-    display: block;
-    position: relative;
-    background-image: url("../assets/Images/devices.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #050525;
-    background-blend-mode: screen;
-    background-size: cover;
-    overflow: auto;
-  }
-
   .mainPageGreetBox {
-    position: absolute;
-    top: 0px; right: 0px; left: 0px; bottom: 0px;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-
-  .greet {
-    position: relative;
-    margin: 15px;
-    text-align: center;
-    color: white;
-    top: 25%;
-    height: 6%;
+    padding: 80px 40px 100px;
   }
 
   .thumbnail {

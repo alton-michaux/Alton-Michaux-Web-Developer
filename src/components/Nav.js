@@ -34,8 +34,9 @@ const NavBar = ({ page }) => {
     )
   })
   return (
-    <div className={[styles.navBar]}>
-      <ul className={[styles.navList]}>
+    <div className={styles.navBar}>
+      <span className={styles.brand}>Alton Michaux</span>
+      <ul className={styles.navList}>
         {filteredItems.map((item) => {
           return (
             item.key === 5 ?

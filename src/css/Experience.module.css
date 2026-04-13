@@ -1,18 +1,24 @@
 .taskList {
-  text-align: center;
+  list-style: none;
+  text-align: left;
+  margin-top: 12px;
+  width: 100%;
+  max-width: 560px;
 }
 
-@media screen and (min-width: 920px) {
-  .taskList {
-    list-style: none;
-    min-height: 250px;
-    overflow-y: auto;
-  }
+.taskItem {
+  padding: 8px 0;
+  font-size: 0.95em;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
 
-  .taskItem {
-    margin: 0 auto;
-    padding: 10px;
-    font-size: .95em;
-    color: grey;
-  }
+.taskItem::before {
+  content: '—';
+  color: var(--accent);
+  flex-shrink: 0;
+  font-weight: 600;
 }

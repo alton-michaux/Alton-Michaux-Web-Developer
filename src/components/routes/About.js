@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import globalStyles from "../../css/App.module.css"
 import { useEffect } from "react";
 import styles from "../../css/About.module.css"
-import LanguageContainer from "../LanguageContainer";
 
 const About = ({ page, setPage }) => {
   useEffect(() => {
@@ -19,20 +18,19 @@ const About = ({ page, setPage }) => {
       ></NavBar>
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
-          <p style={{ padding: "10px"}}>
-            I am an experienced back-end developer with expertise in Object-Oriented Programming (OOP), focusing on Ruby on Rails technologies. 
+          <p>
+            I'm a fullstack developer with a focus on Ruby on Rails and Django, currently working at Code The Dream Labs across two projects: Vamos, a field operations platform serving social impact organizations, and Datos, a data management tool built to support it.
           </p>
-          <p style={{ padding: "10px"}}>
-            My knowledge includes MVC concepts, ORM, and RESTful APIs.
+          <p>
+            On <b>Vamos</b> I own the release cycle from branching through production deployment, design and maintain RESTful APIs, and manage a mid sized team of developers. 
           </p>
-          <p style={{ padding: "10px"}}>
-            Additionally, I have practical experience in front-end development using HTML, CSS, and JavaScript.
+          <p>
+            On <b>Datos</b> I work across the stack — building UI components in React, writing Docker deployment scripts, and managing staging environments on DigitalOcean.
           </p>
-          <p style={{ padding: "10px"}}>
-            As a self-motivated individual constantly eager to expand my skill set and enhance my existing strengths, I take great pride in delivering efficient business solutions to my clients and employers.
+          <p>
+            Outside of shipping code, I review PRs, mentor junior developers, and help keep our deployment infrastructure running across Heroku and DigitalOcean.
           </p>
         </div>
-        <LanguageContainer></LanguageContainer>
       </div>
       <Footer></Footer>
     </div>

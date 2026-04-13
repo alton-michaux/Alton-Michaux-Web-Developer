@@ -1,80 +1,49 @@
 .canvasGrid {
-  position: relative;
-  width: 87vw;
-  height: 1vh;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.canvasDiv {
+  margin-bottom: 32px;
 }
 
 .projectDisplay {
   display: none;
-  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
 }
 
 .projectLink {
-  top: 3vh;
-  position: relative;
-  height: 29vh;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.appBlock {
-  position: relative;
-  height: 100%;
+.projectLink:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 18px rgba(100, 255, 218, 0.12);
+}
+
+.appBlock,
+.gameBlock {
+  background-color: var(--surface);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  min-height: 140px;
+  text-align: center;
+  gap: 10px;
 }
 
 @media screen and (min-width: 920px) {
-  .canvasDiv {
-    height: 0;
-  }
-
   .canvasGrid {
-    position: relative;
-    margin: 0 auto;
-    bottom: 12%;
-    left: 0;
-    right: 0;
-    width: 70%;
-    height: 16%;
-  }
-
-  .projectDisplay {
-    position: absolute;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    height: 6em;
-    width: 100%;
-  }
-
-  .projectLink {
-    position: relative;
-    height: inherit;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-
-  .gameBlock,
-  .appBlock {
-    position: absolute;
-    height: 6em;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    box-shadow: rgb(13, 48, 122) -1px 2px 13px;
-  }
-  
-  .appBlock:hover,
-  .gameBlock:hover {
-    transform: scale(1.03);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .canvasGrid {
-    position: absolute;
-    margin-top: 10%;
-    width: 90%;
-    bottom: 10%;
+    padding: 0 40px 80px;
   }
 }

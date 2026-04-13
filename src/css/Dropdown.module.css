@@ -1,70 +1,42 @@
 .selectBox {
   display: flex;
-  position: sticky;
-  height: 20%;
-  margin: 0 auto;
   justify-content: center;
+  padding: 0 24px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .projectPulldown {
-  position: absolute;
-  top: 10%; bottom: 0; left: auto; right: auto;
-  font-size: 1em;
-  opacity: 80%;
-  background-color: #31313f;
-  text-align: center;
-  color: white;
-  height: 25%;
-  padding: 15%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: var(--surface);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 180px;
+}
+
+.projectPulldown:focus,
+.projectPulldown:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
 }
 
 .projectPulldown > option {
-  max-width: 80%;
+  background-color: var(--surface);
+  color: var(--text-primary);
 }
 
 @media screen and (min-width: 920px) {
   .selectBox {
-    position: relative;
-    display: flex;
-    margin-top: 20em;
-    max-width: 40%;
-    height: 20%;
-    justify-content: center;
-  }
-
-  .projectPulldown {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    height: 30%;
-    width: 20%;
-    padding: 5px;
-    margin-top: 0px;
-    margin: 2px;
-    font-size: 1em;
-    box-shadow: rgb(13, 48, 122) -1px 2px 13px;
-  }
-  
-  .projectPulldown::after {
-    border: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .selectBox {
-    position: relative;
-    top: 5em;
-    width: 100%;
-    height: 20%;
-  }
-
-  .projectPulldown {
-    z-index: 1001;
-    position: absolute;
-    top: 0;
-    width: 40%;
-    font-size: 1em;
-    min-height: inherit;
-    margin-bottom: 5%;
+    padding: 0 40px 24px;
   }
 }

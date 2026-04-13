@@ -10,6 +10,23 @@ const Experience = ({ page, setPage }) => {
     setPage("Experience")
   }, [setPage, page])
 
+  const datosItems =
+    [
+      {
+        text: "Build and maintain frontend UI components in React",
+        key: 1
+      }, {
+        text: "Write Docker deployment scripts and automate environment setup with bash",
+        key: 2
+      }, {
+        text: "Provision and manage staging environments on DigitalOcean",
+        key: 3
+      }, {
+        text: "Design and document data schemas and data dictionaries",
+        key: 4
+      }
+    ]
+
   const listItems =
     [
       {
@@ -34,11 +51,8 @@ const Experience = ({ page, setPage }) => {
         text: "Mentor junior developers and lead apprentice evaluations",
         key: 7
       }, {
-        text: "Integrate LLM APIs (Google Gemini) to build AI-powered features",
-        key: 8
-      }, {
         text: "Document APIs using Swagger and manage deployment infrastructure across Heroku and DigitalOcean",
-        key: 9
+        key: 8
       }
     ]
   return (
@@ -55,6 +69,15 @@ const Experience = ({ page, setPage }) => {
           <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Developer</a> on the <a href="https://sites.google.com/codethedream.org/vamos-project-wiki/" target="none">Vamos app</a></p>
           <ul className={[styles.taskList, globalStyles.greet].join(' ')}> A short list of my duties and contributions to Vamos include:
             {listItems.map((item) => {
+              return (
+                <li key={item.key} className={styles.taskItem}>{item.text}</li>
+              )
+            })}
+          </ul>
+          <p className={globalStyles.greet} style={{ marginTop: '32px' }}>Datos (<i>2024 - present</i>)</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}>Full-stack contributor on Datos, a data management tool built to support field operations.</p>
+          <ul className={[styles.taskList, globalStyles.greet].join(' ')}>
+            {datosItems.map((item) => {
               return (
                 <li key={item.key} className={styles.taskItem}>{item.text}</li>
               )

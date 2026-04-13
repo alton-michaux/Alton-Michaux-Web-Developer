@@ -22,7 +22,10 @@ const About = ({ page, setPage }) => {
             I'm a fullstack developer with a focus on Ruby on Rails and Django, currently working at Code The Dream Labs across two projects: Vamos, a field operations platform serving social impact organizations, and Datos, a data management tool built to support it.
           </p>
           <p>
-            On Vamos I own the release cycle from branching through production deployment, design and maintain RESTful APIs, and manage a mid sized team of developers. On Datos I work across the stack — building UI components in React, writing Docker deployment scripts, and managing staging environments on DigitalOcean.
+            On <b>Vamos</b> I own the release cycle from branching through production deployment, design and maintain RESTful APIs, and manage a mid sized team of developers. 
+          </p>
+          <p>
+            On <b>Datos</b> I work across the stack — building UI components in React, writing Docker deployment scripts, and managing staging environments on DigitalOcean.
           </p>
           <p>
             Outside of shipping code, I review PRs, mentor junior developers, and help keep our deployment infrastructure running across Heroku and DigitalOcean.

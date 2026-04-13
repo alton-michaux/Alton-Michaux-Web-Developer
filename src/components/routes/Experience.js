@@ -75,7 +75,7 @@ const Experience = ({ page, setPage }) => {
             })}
           </ul>
           <p className={globalStyles.greet} style={{ marginTop: '32px' }}>Datos (<i>2024 - present</i>)</p>
-          <p className={[globalStyles.greet, globalStyles.text].join(' ')}>Full-stack contributor on Datos, a data management tool built to support field operations.</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}>Full-stack contributor on <a href="https://hammerhead-app-sl9sl.ondigitalocean.app/app/search/" target="blank">Datos</a>, a data management tool built to support field operations.</p>
           <ul className={[styles.taskList, globalStyles.greet].join(' ')}>
             {datosItems.map((item) => {
               return (

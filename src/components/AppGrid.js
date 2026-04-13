@@ -12,12 +12,6 @@ const AppGrid = ({ gameRef, appRef }) => {
         imgAlt: "spotify playlist app",
         text: "Spotify Playlist App",
         key: 1
-      }, {
-        href: "https://altons-todo-list.netlify.app/",
-        imgSrc: "https://www.cornerstone.edu/wp-content/uploads/2021/12/1470-WEB-productivity.jpeg",
-        imgAlt: "Todo list",
-        text: "Todo List",
-        key: 3
       }
     ]
 

@@ -13,12 +13,6 @@ const AppGrid = ({ gameRef, appRef }) => {
         text: "Spotify Playlist App",
         key: 1
       }, {
-        href: "https://alton-michaux.github.io/Breakout-game-/",
-        imgSrc: "https://image.api.playstation.com/vulcan/ap/rnd/202009/1415/6nNsvW4EX4wGbcIItg0paDEV.jpg?w=1024",
-        imgAlt: "breakout game",
-        text: "Breakout",
-        key: 2
-      }, {
         href: "https://altons-todo-list.netlify.app/",
         imgSrc: "https://www.cornerstone.edu/wp-content/uploads/2021/12/1470-WEB-productivity.jpeg",
         imgAlt: "Todo list",
@@ -84,21 +78,14 @@ const AppGrid = ({ gameRef, appRef }) => {
         <div className={styles.projectDisplay} id="rubyDiv" ref={gameRef}>
           {tempItem.map((item) => {
             return (
-              <a
-                className={styles.projectLink}
-                href={item.href}
-                target="blank"
-                key={item.key}
-              >
-                <div className={[styles.gameBlock, styles.appBlock].join(' ')} id="games">
-                  <img
-                    src={item.imgSrc}
-                    alt={item.imgAlt}
-                    className={globalStyles.thumbnail}
-                  />
-                  <div className={[globalStyles.text, navStyles.listItems].join(' ')}>{item.text}</div>
-                </div>
-              </a>
+              <div className={[styles.gameBlock, styles.appBlock].join(' ')} id="games" key={item.key}>
+                <img
+                  src={item.imgSrc}
+                  alt={item.imgAlt}
+                  className={globalStyles.thumbnail}
+                />
+                <div className={[globalStyles.text, navStyles.listItems].join(' ')}>{item.text}</div>
+              </div>
             )
           })}
         </div>

@@ -7,10 +7,15 @@ const AppGrid = ({ gameRef, appRef }) => {
   const jsListItems =
     [
       {
+<<<<<<< Updated upstream
         href: "https://playlistified.netlify.app/",
         imgSrc: "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/10/12/64723.jpg",
         imgAlt: "spotify playlist app",
         text: "Spotify Playlist App",
+=======
+        href: "https://playlist-ly.netlify.app/",
+        text: "My Spotify Playlist App",
+>>>>>>> Stashed changes
         key: 1
       }, {
         href: "https://alton-michaux.github.io/Breakout-game-/",

@@ -7,8 +7,8 @@ const AppGrid = ({ rubyRef, nodeRef, nextRef }) => {
   const nodeListItems =
     [
       {
-        href: "https://playlistified.netlify.app/",
-        text: "Spotify Playlist App",
+        href: "https://playlist-ly.netlify.app/",
+        text: "Playlist_me",
         key: 1
       }
     ]

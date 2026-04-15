@@ -25,7 +25,7 @@ const Dropdown = () => {
         <select className={[styles.projectPulldown]} id="projects" defaultValue={"undefined"} onChange={selected => handleSelect(selected)}>
           <option value={"undefined"} className={styles.projects} disabled>Select a stack</option>
           <option value="Node/Express" className={styles.projects}>Node/Express</option>
-          <option value="Django" className={styles.projects}>Django</option>
+          <option value="Django" className={styles.projects}>Django/Next.js</option>
           <option value="Ruby on Rails" className={styles.projects}>Ruby on Rails</option>
         </select>
       </div>

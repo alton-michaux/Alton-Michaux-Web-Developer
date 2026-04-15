@@ -3,7 +3,7 @@ import styles from "../css/AppGrid.module.css"
 import globalStyles from "../css/App.module.css"
 import PropTypes from "prop-types"
 
-const AppGrid = ({ rubyRef, nodeRef, nextRef }) => {
+const AppGrid = ({ rubyRef, nodeRef, djangoRef }) => {
   const nodeListItems =
     [
       {
@@ -53,7 +53,7 @@ const AppGrid = ({ rubyRef, nodeRef, nextRef }) => {
   return (
     <div className={styles.canvasGrid}>
       {renderCards(nodeListItems, nodeRef, "nodeDiv")}
-      {renderCards(nextListItems, nextRef, "nextDiv")}
+      {renderCards(nextListItems, djangoRef, "nextDiv")}
       {renderCards(rubyListItems, rubyRef, "rubyDiv")}
     </div>
   )
@@ -62,7 +62,7 @@ const AppGrid = ({ rubyRef, nodeRef, nextRef }) => {
 AppGrid.propTypes = {
   nodeRef: PropTypes.object.isRequired,
   rubyRef: PropTypes.object.isRequired,
-  nextRef: PropTypes.object.isRequired
+  djangoRef: PropTypes.object.isRequired
 }
 
 export default AppGrid

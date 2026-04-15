@@ -22,6 +22,7 @@
   appearance: none;
   -webkit-appearance: none;
   min-width: 180px;
+  text-align: center;
 }
 
 .projectPulldown:focus,
@@ -33,6 +34,7 @@
 .projectPulldown > option {
   background-color: var(--surface);
   color: var(--text-primary);
+  text-align: center;
 }
 
 @media screen and (min-width: 920px) {

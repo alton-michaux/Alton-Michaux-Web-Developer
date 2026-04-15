@@ -25,7 +25,7 @@ const AppGrid = ({ rubyRef, nodeRef, djangoRef }) => {
   const rubyListItems =
     [
       {
-        href: "https://github.com/alton-michaux/Chorbee",
+        href: "https://chorbee.onrender.com/",
         text: "Chorbee",
         key: 1
       }

@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0 12px;
 }
 
 .brand {
@@ -19,14 +19,15 @@
   letter-spacing: -0.02em;
   white-space: nowrap;
   text-decoration: none;
+  display: none;
 }
 
 .navList {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 4px;
-  margin: 0;
+  gap: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -38,7 +39,7 @@
 .listItems > a {
   text-decoration: none;
   color: var(--text-muted);
-  padding: 6px 10px;
+  padding: 6px 7px;
   border-radius: 4px;
   transition: color 0.15s ease;
   display: block;
@@ -46,6 +47,25 @@
 
 .listItems > a:hover {
   color: var(--accent);
+}
+
+@media screen and (min-width: 600px) {
+  .navBar {
+    padding: 0 24px;
+  }
+
+  .brand {
+    display: block;
+  }
+
+  .navList {
+    gap: 4px;
+    margin: 0;
+  }
+
+  .listItems > a {
+    padding: 6px 10px;
+  }
 }
 
 @media screen and (min-width: 920px) {

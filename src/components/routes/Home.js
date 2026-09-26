@@ -19,8 +19,8 @@ const Home = ({ page, setPage }) => {
       <div className={globalStyles.mainPageGreetBox}>
         <div className={styles.greetWrapper}>
           <h1 className={styles.heroTitle}>Hey, I'm Alton and I build <span className={styles.accent}>web apps.</span></h1>
-          <h2 className={[styles.heroSubtitle, globalStyles.mobileHide].join(' ')}>Let's Build Something.</h2>
-          <p className={[styles.heroBody, globalStyles.mobileHide].join(' ')}>Feel free to browse my personal work below.</p>
+          <h2 className={[styles.heroSubtitle, globalStyles.mobileHide].join(' ')}>Lead developer. Rails, Django, React, and the infra that keeps them running.</h2>
+          <p className={[styles.heroBody, globalStyles.mobileHide].join(' ')}>Pick a stack to browse my personal projects, or check out <a href="/work" className={styles.accent}>Selected Work</a> for the professional side.</p>
         </div>
       </div>
       <Dropdown></Dropdown>

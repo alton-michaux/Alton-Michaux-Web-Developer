@@ -4,6 +4,7 @@ import Home from "./components/routes/Home"
 import About from "./components/routes/About"
 import Contact from "./components/routes/Contact"
 import Experience from "./components/routes/Experience"
+import Work from "./components/routes/Work"
 import PageUnknown from "./components/routes/PageUnknown"
 
 function App() {
@@ -57,6 +58,17 @@ function App() {
               page={currentPage}
               setPage={handlePage}
             ></Experience>
+          }
+        >
+        </Route>
+        <Route
+          exact
+          path='/work'
+          element={
+            <Work
+              page={currentPage}
+              setPage={handlePage}
+            ></Work>
           }
         >
         </Route>

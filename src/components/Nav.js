@@ -10,6 +10,10 @@ const NavBar = ({ page }) => {
         text: "Home",
         key: 1
       }, {
+        href: "/work",
+        text: "Work",
+        key: 6
+      }, {
         href: "/experience",
         text: "Experience",
         key: 2
@@ -22,7 +26,7 @@ const NavBar = ({ page }) => {
         text: "Contact",
         key: 4
       }, {
-        href: "../assets/Docs/Alton_Michaux_Resume.docx",
+        href: "/Alton_Michaux_Resume.pdf",
         text: "Resume",
         key: 5
       }

@@ -11,7 +11,7 @@ test('landing page', async () => {
   render(<App />, { wrapper: BrowserRouter })
 
   // verify page content for default route
-  expect(screen.getByText(/Hey, I'm Alton and I Develop Web Apps./i)).toBeInTheDocument()
+  expect(screen.getByText(/Hey, I'm Alton and I build/i)).toBeInTheDocument()
 
   // verify page content for expected route after navigating
   // await user.click(screen.getByText(/About/i))
@@ -29,7 +29,7 @@ test('about page', () => {
   )
 
   // verify navigation to "no match" route
-  expect(screen.getByText(/ORM and RESTful APIs/i)).toBeInTheDocument()
+  expect(screen.getByText(/backend lead developer at Code The Dream Labs/i)).toBeInTheDocument()
 })
 
 test('experience page', () => {
@@ -44,6 +44,17 @@ test('experience page', () => {
 
   // verify navigation to "no match" route
   expect(screen.getByText(/Code The Dream Labs/i)).toBeInTheDocument()
+})
+
+test('work page', () => {
+  render(
+    <MemoryRouter initialEntries={['/work']}>
+      <App />
+    </MemoryRouter>,
+  )
+
+  expect(screen.getByText(/Selected Work/i)).toBeInTheDocument()
+  expect(screen.getByText(/Production hardening for a Django API/i)).toBeInTheDocument()
 })
 
 test('contact page', () => {

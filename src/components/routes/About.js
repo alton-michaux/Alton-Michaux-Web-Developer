@@ -19,16 +19,16 @@ const About = ({ page, setPage }) => {
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p>
-            I'm a fullstack developer with a focus on Ruby on Rails and Django, currently working at Code The Dream Labs across two projects: Vamos, a field operations platform serving social impact organizations, and Datos, a data management tool built to support it.
+            I'm a backend lead developer at Code The Dream Labs, where I've been since 2021. I work mostly in Ruby on Rails and Django with React on the front end, and I spend a good chunk of my time on the stuff around the code: releases, infrastructure, reviews, and helping newer devs level up.
           </p>
           <p>
-            On <b>Vamos</b> I own the release cycle from branching through production deployment, design and maintain RESTful APIs, and manage a mid sized team of developers. 
+            I didn't start in tech. Before this I was working an outbound dock at Target. I went through Code The Dream's classes and practicum, started at Labs as a backend intern, and worked my way up to leading the team I joined.
           </p>
           <p>
-            On <b>Datos</b> I work across the stack — building UI components in React, writing Docker deployment scripts, and managing staging environments on DigitalOcean.
+            What I'm good at is taking a production app that's a little held together with tape and making it boring. Hardened configs, CI that can roll back, dependencies that don't rot, and releases that ship on a schedule.
           </p>
           <p>
-            Outside of shipping code, I review PRs, mentor junior developers, and help keep our deployment infrastructure running across Heroku and DigitalOcean.
+            Lately I've been building AI into how I work, not just into what I ship. That means custom Claude Code tooling for code review, dependency triage and standups, tuned to the codebases I actually work in.
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ const About = ({ page, setPage }) => {
   )
 }
 
-About.prototype = {
+About.propTypes = {
   page: PropTypes.string.isRequired,
   setPage: PropTypes.func.isRequired
 }

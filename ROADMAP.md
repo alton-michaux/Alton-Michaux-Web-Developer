@@ -1,3 +1,6 @@
 - [x] Get the app back running
 - [x] Remove dead links
 - [x] Redesign UI
+- [x] Refresh copy for lead role, add anonymized case studies (/work)
+- [ ] Regenerate resume (current PDF is from 2023)
+- [ ] Services section (on hold until CTD moonlighting answer)

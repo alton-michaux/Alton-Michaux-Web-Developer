@@ -10,19 +10,19 @@ const Experience = ({ page, setPage }) => {
     setPage("Experience")
   }, [setPage, page])
 
-  const datosItems =
+  const h2dataItems =
     [
       {
         text: "Lead developer on the rewrite, from data ingestion through the public API",
         key: 1
       }, {
-        text: "Planned and ran the production move to DigitalOcean: private networking, managed Postgres with connection pooling, and a DNS cutover",
+        text: "Planning and running the production move to DigitalOcean: private networking, managed Postgres with connection pooling, and a DNS cutover",
         key: 2
       }, {
         text: "Built CI that tags every image by commit so any deploy can roll back in one step",
         key: 3
       }, {
-        text: "Hardened the Django app for production: secret handling, HSTS and TLS, auth gaps, throttling, and health checks",
+        text: "Hardening the Django app for production: secret handling, HSTS and TLS, auth gaps, throttling, and health checks",
         key: 4
       }, {
         text: "Track down data bugs in the DOL feeds, from misspelled source fields to wage values losing their cents",
@@ -84,7 +84,8 @@ const Experience = ({ page, setPage }) => {
             Professional Experience
           </h1>
           <p className={globalStyles.greet}>Code The Dream Labs (<i>October 2021 - present</i>)</p>
-          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Lead Developer</a> (joined as a backend developer)</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://labs.codethedream.org/portfolios/alton-michaux" target="blank">Backend Lead Developer</a> (<i>October 2022 - present</i>)</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}>Apprentice (<i>October 2021 - October 2022</i>)</p>
           <p className={globalStyles.greet} style={{ marginTop: '32px' }}>Vamos</p>
           <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://sites.google.com/codethedream.org/vamos-project-wiki/" target="none">Vamos</a> is a field operations platform for social impact organizations. Rails, React, Postgres and Elasticsearch.</p>
           <ul className={[styles.taskList, globalStyles.greet].join(' ')}>
@@ -94,10 +95,10 @@ const Experience = ({ page, setPage }) => {
               )
             })}
           </ul>
-          <p className={globalStyles.greet} style={{ marginTop: '32px' }}>Datos (<i>2024 - present</i>)</p>
-          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://hammerhead-app-sl9sl.ondigitalocean.app/app/search/" target="blank">Datos</a> ingests U.S. Department of Labor H-2A and H-2B visa data and makes it searchable. Django, DRF, Postgres and DigitalOcean.</p>
+          <p className={globalStyles.greet} style={{ marginTop: '32px' }}>H2Data (<i>2024 - present</i>)</p>
+          <p className={[globalStyles.greet, globalStyles.text].join(' ')}><a href="https://hammerhead-app-sl9sl.ondigitalocean.app/app/search/" target="blank">H2Data</a> ingests U.S. Department of Labor H-2A and H-2B visa data and makes it searchable. Django, DRF, Postgres and DigitalOcean.</p>
           <ul className={[styles.taskList, globalStyles.greet].join(' ')}>
-            {datosItems.map((item) => {
+            {h2dataItems.map((item) => {
               return (
                 <li key={item.key} className={styles.taskItem}>{item.text}</li>
               )

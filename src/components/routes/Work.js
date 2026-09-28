@@ -17,7 +17,8 @@ const Work = ({ page, setPage }) => {
         stack: ["Django", "DigitalOcean", "Postgres", "GitHub Actions"],
         problem: "A public data API was running on a single droplet with cron jobs and a staging setup nobody had fully mapped. It needed a real production home without a real production budget.",
         work: "Audited the existing infra first, which turned up an open firewall and an app that wasn't where the plan assumed. Then split the move into small tickets: private networking, managed Postgres with connection pooling, CI that tags every image by commit, scheduled ingestion with failure alerts, a backfill, and a DNS cutover.",
-        result: "Production lands around $160 to $180 a month. Any deploy can roll back to a known image in one step, and the container registry got cut roughly in half.",
+        result: "Production is on track to land around $160 to $180 a month. Any deploy can roll back to a known image in one step, and the container registry got cut roughly in half.",
+        ongoing: true,
         key: 1
       }, {
         title: "Production hardening for a Django API",
@@ -25,6 +26,7 @@ const Work = ({ page, setPage }) => {
         problem: "The API was built for development and quietly shipped that way. There was a public endpoint that accepted writes without auth, and settings that behaved differently per worker.",
         work: "Locked down the write path, made the app refuse to boot without a real secret key (a missing one was generating a different key per worker and breaking CSRF), turned on HSTS and TLS database connections, added throttling and health checks, and capped the CSV export behind a streamed response.",
         result: "No unauthenticated writes, predictable config across environments, and endpoints a load balancer can actually health check.",
+        ongoing: true,
         key: 2
       }, {
         title: "Dependency triage that doesn't eat a sprint",
@@ -63,6 +65,7 @@ const Work = ({ page, setPage }) => {
             {caseStudies.map((item) => {
               return (
                 <li key={item.key} className={styles.caseCard}>
+                  {item.ongoing && <span className={styles.ongoingTag}>In progress</span>}
                   <h2 className={styles.caseTitle}>{item.title}</h2>
                   <ul className={styles.stackList}>
                     {item.stack.map((tech) => (
@@ -71,7 +74,7 @@ const Work = ({ page, setPage }) => {
                   </ul>
                   <p className={styles.caseText}><b>Problem.</b> {item.problem}</p>
                   <p className={styles.caseText}><b>What I did.</b> {item.work}</p>
-                  <p className={styles.caseText}><b>Result.</b> {item.result}</p>
+                  <p className={styles.caseText}><b>{item.ongoing ? "So far." : "Result."}</b> {item.result}</p>
                 </li>
               )
             })}

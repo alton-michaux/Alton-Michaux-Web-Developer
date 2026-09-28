@@ -9,7 +9,7 @@ Personal portfolio website for Alton Michaux, web developer. Built with React.
 | `/` | Home — hero intro and personal projects |
 | `/work` | Anonymized case studies from professional work |
 | `/about` | Bio and background |
-| `/experience` | Professional experience at Code The Dream Labs (Vamos & Datos) |
+| `/experience` | Professional experience at Code The Dream Labs (Vamos & H2Data) |
 | `/contact` | Links to email, GitHub, and LinkedIn |
 
 ## Tech Stack

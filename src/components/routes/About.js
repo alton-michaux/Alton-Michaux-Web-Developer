@@ -19,7 +19,7 @@ const About = ({ page, setPage }) => {
       <div className={styles.aboutMeGreetBox}>
         <div className={styles.aboutMeTextBox}>
           <p>
-            I'm a lead developer at Code The Dream Labs, where I've been since 2021. I work mostly in Ruby on Rails and Django with React on the front end, and I spend a good chunk of my time on the stuff around the code: releases, infrastructure, reviews, and helping newer devs level up.
+            I'm a backend lead developer at Code The Dream Labs, where I've been since 2021. I work mostly in Ruby on Rails and Django with React on the front end, and I spend a good chunk of my time on the stuff around the code: releases, infrastructure, reviews, and helping newer devs level up.
           </p>
           <p>
             I didn't start in tech. Before this I was working an outbound dock at Target. I went through Code The Dream's classes and practicum, started at Labs as a backend intern, and worked my way up to leading the team I joined.

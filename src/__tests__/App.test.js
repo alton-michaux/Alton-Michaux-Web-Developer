@@ -29,7 +29,7 @@ test('about page', () => {
   )
 
   // verify navigation to "no match" route
-  expect(screen.getByText(/lead developer at Code The Dream Labs/i)).toBeInTheDocument()
+  expect(screen.getByText(/backend lead developer at Code The Dream Labs/i)).toBeInTheDocument()
 })
 
 test('experience page', () => {

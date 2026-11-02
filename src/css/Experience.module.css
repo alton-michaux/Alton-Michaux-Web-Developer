@@ -22,3 +22,19 @@
   flex-shrink: 0;
   font-weight: 600;
 }
+
+.stackList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.stackTag {
+  font-size: 0.8em;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+}

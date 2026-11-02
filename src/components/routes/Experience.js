@@ -22,10 +22,10 @@ const Experience = ({ page, setPage }) => {
         text: "Built CI that tags every image by commit so any deploy can roll back in one step",
         key: 3
       }, {
-        text: "Hardening the Django app for production: secret handling, HSTS and TLS, auth gaps, throttling, and health checks",
+        text: "Preparing the Django app for production: configuration, TLS, throttling, and health checks",
         key: 4
       }, {
-        text: "Track down data bugs in the DOL feeds, from misspelled source fields to wage values losing their cents",
+        text: "Track down schema and data quality bugs in the DOL feeds",
         key: 5
       }, {
         text: "Put together hosting cost estimates for leadership before we committed to the new setup",
@@ -48,7 +48,7 @@ const Experience = ({ page, setPage }) => {
         text: "Keep production healthy on Heroku: stack upgrades, slug size limits, Elasticsearch recovery, and email deliverability",
         key: 4
       }, {
-        text: "Security and privacy work: dependency and CVE triage, security headers, and encryption reviews",
+        text: "Triage dependency updates by checking whether each advisory is reachable from app code, then plan merges in batches that don't conflict",
         key: 5
       }, {
         text: "Develop features across the full stack, with RSpec and Capybara tests and Swagger API docs",
